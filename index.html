@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elimine Baratas em 14 Dias - eBook</title>
+    <title>Elimine Baratas em 7 Dias - eBook</title>
     <style>
         /* Reset básico */
         * {
@@ -24,17 +24,33 @@
         header {
             text-align: center;
             padding: 60px 0;
-            background-color: #FF6F61;  /* Cor vibrante */
+            background-color: #FF6F61;
             color: white;
             border-radius: 10px;
             margin-bottom: 40px;
-            background-image: url('https://source.unsplash.com/1600x900/?cleaning');  /* Imagem de fundo chamativa */
+            background-image: url('https://source.unsplash.com/1600x900/?cleaning');
             background-size: cover;
             background-position: center;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        header h1, .subtitulo {
+            position: relative;
+            z-index: 1;
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 2.2em; /* Diminuído para um tamanho mais razoável */
             margin-bottom: 15px;
         }
 
@@ -96,7 +112,7 @@
         .btn {
             display: inline-block;
             padding: 15px 30px;
-            background-color: #FF6F61;  /* Cor vibrante */
+            background-color: #FF6F61;
             color: white;
             text-decoration: none;
             font-size: 1.4em;
@@ -145,17 +161,41 @@
         footer ul li a:hover {
             text-decoration: underline;
         }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .subtitulo {
+                font-size: 1.2em;
+            }
+            .btn {
+                font-size: 1.2em;
+                padding: 12px 25px;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Elimine Baratas de Forma Rápida e Natural em Apenas 14 Dias!</h1>
+        <h1>Elimine Baratas de Forma Rápida e Natural em Apenas 7 Dias!</h1>
         <p class="subtitulo">Diga adeus às baratas com nosso guia comprovado para eliminá-las de forma eficiente e sem químicos.</p>
     </header>
 
     <section class="problema">
         <h2>Você está cansado de lutar contra as baratas em sua casa?</h2>
-        <p>Baratas são um problema comum em muitas casas e podem ser difíceis de eliminar. O nosso eBook *"Como Eliminar Baratas em 14 Dias!"* oferece soluções naturais, rápidas e eficazes para exterminar essas pragas sem recorrer a produtos tóxicos.</p>
+        <p>Baratas são um problema comum em muitas casas e podem ser difíceis de eliminar. O nosso eBook *"Como Eliminar Baratas em 7 Dias!"* oferece soluções naturais, rápidas e eficazes para exterminar essas pragas sem recorrer a produtos tóxicos.</p>
+    </section>
+
+    <section class="video">
+        <h2>Assista ao vídeo e saiba mais!</h2>
+        <div>
+            <!-- Espaço para o vídeo: substitua com seu código de vídeo -->
+            <iframe  src="vid.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </section>
 
     <section class="beneficios">
@@ -201,4 +241,4 @@
         </ul>
     </footer>
 </body>
-</html>
+    </html>
